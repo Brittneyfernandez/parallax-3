@@ -3,11 +3,13 @@ body, html {
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
+    font-family: 'Inconsolata', monospace;
   }
+
   
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
-    opacity: 0.65;
+    opacity: .8;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +19,7 @@ body, html {
   .bgimg-1 {
     background-image: url(https://pixnio.com/free-images/2017/03/01/2017-03-01-07-11-56.jpg);
     min-height: 100%;
+    display: flex;
   }
   
   .bgimg-2 {
@@ -30,12 +33,13 @@ body, html {
   }
   
   .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
+  
+
     width: 100%;
     text-align: center;
     color: #000;
+    position: relative;
+    top: -180px;
   }
   
   .caption span.border {
@@ -58,3 +62,57 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
     }
+  }
+
+  /* Navbar start */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /* Navbar end */
+
+  .caption{
+    width: 600px;
+    margin: auto;
+    text-shadow: 2px 1px black;
+  }
+  
+  #scroll-up {
+    position: relative;
+    top: -300px;
+  }
+  footer i{
+    font-size: 80px;
+    margin: 20px;
+  }
+  footer i:hover{
+    font-size: 80px;
+    margin: 20px;
+    color: plum;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    
+  }
