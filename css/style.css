@@ -65,12 +65,14 @@ body, html {
   }
 
   /* Navbar start */
-  ul {
+  .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
     
   }
   
@@ -114,5 +116,6 @@ body, html {
   footer ul {
     display: flex;
     justify-content: center;
+    background-color: black;
     
   }
